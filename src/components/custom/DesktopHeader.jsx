@@ -69,28 +69,31 @@ export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link to="/about" className="px-3 py-2 text-sm">
+                <Link to="/about" className="px-3 py-2 text-sm hidden md:flex">
                   About
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link to="/blog" className="px-3 py-2 text-sm">
+                <Link to="/blog" className="px-3 py-2 text-sm hidden md:flex">
                   Blog
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link to="/contact" className="px-3 py-2 text-sm">
+                <Link
+                  to="/contact"
+                  className="px-3 py-2 text-sm hidden lg:flex"
+                >
                   Contact
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link to="/pages" className="px-3 py-2 text-sm">
+                <Link to="/pages" className="px-3 py-2 text-sm hidden md:flex">
                   Pages
                 </Link>
               </NavigationMenuLink>
