@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./layout/Header";
 import HomePage from "./pages/HomePage";
@@ -11,7 +10,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
         </Switch>
-        Ali
+        Ali emre
       </main>
     </div>
   );
