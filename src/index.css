@@ -39,7 +39,7 @@
     @apply font-aleo text-base tracking-[0.0125rem] font-medium;
   }
   .mobile-menu {
-    @apply font-aleo text-menu tracking-[0.0125rem] font-medium;
+    @apply font-aleo text-xl tracking-[0.0125rem] font-medium;
   }
 }
 
