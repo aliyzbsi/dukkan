@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
         </Switch>
-        Ali ahmet
+        Ali mehmet
       </main>
     </div>
   );
