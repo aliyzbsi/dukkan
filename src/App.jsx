@@ -10,12 +10,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
         </Switch>
-<<<<<<< HEAD
         <div>yüzbaşı</div>
-=======
         <div>ali</div>
         <div>ali</div>
->>>>>>> T01
       </main>
     </div>
   );
