@@ -11,6 +11,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
         </Switch>
         <div>ali</div>
+        <div>ali</div>
       </main>
     </div>
   );
