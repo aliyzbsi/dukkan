@@ -12,6 +12,7 @@ function App() {
         </Switch>
         <div>ali</div>
         <div>yüzbaşı</div>
+        <div>Aksaray</div>
       </main>
     </div>
   );
