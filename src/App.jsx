@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
         </Switch>
-        <div>alis</div>
+        <div>ali</div>
         <div>yüzbaşı</div>
       </main>
     </div>
