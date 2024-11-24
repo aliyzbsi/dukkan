@@ -41,6 +41,9 @@
   .mobile-menu {
     @apply font-aleo text-xl tracking-[0.0125rem] font-medium;
   }
+  .hero-link {
+    @apply font-aleo text-lg tracking-[0.0125rem] font-medium  rounded-xl hover:underline;
+  }
 }
 
 @layer components {

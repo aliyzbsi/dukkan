@@ -13,13 +13,13 @@ import { Link } from "react-router-dom";
 
 export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
   return (
-    <header>
-      <div className=" mx-auto px-8 py-10 h-16 flex items-center justify-around">
-        <Link to="/" className="text-xl font-semibold">
+    <header className="">
+      <div className=" mx-auto px-8 py-10 h-16 flex items-center justify-around ">
+        <Link to="/" className="text-2xl font-semibold">
           Dükkan
         </Link>
 
-        <NavigationMenu className="flex">
+        <NavigationMenu className="flex ">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
@@ -33,12 +33,12 @@ export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
                 Shop
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-48 p-2">
+                <ul className="grid w-48 p-2 bg-white ">
                   <li>
                     <NavigationMenuLink asChild>
                       <Link
                         to="/categories"
-                        className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
+                        className="block px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-md"
                       >
                         All Categories
                       </Link>
@@ -48,9 +48,20 @@ export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/categories"
-                        className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
+                        className="block px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-md"
                       >
                         Kadın Giyim
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/new-arrivals"
+                        className="block px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-md"
+                      >
+                        New Arrivals
                       </Link>
                     </NavigationMenuLink>
                   </li>
@@ -58,7 +69,7 @@ export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/new-arrivals"
-                        className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
+                        className="block px-3 py-2 text-sm hover:bg-accent hover:text-white rounded-md"
                       >
                         New Arrivals
                       </Link>
