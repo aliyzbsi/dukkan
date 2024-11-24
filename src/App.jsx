@@ -1,20 +1,20 @@
 import { Route, Switch } from "react-router-dom";
-import Header from "./layout/Header";
+
 import HomePage from "./pages/HomePage";
+import PageContent from "./layout/PageContent";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow">
+    <Switch>
+      <PageContent>
         <Switch>
-          <Route path="/" exact component={HomePage} />
+          <Route exact path="/" component={HomePage} />
         </Switch>
         <div>ali</div>
         <div>yüzbaşı</div>
         <div>Aksaray</div>
-      </main>
-    </div>
+      </PageContent>
+    </Switch>
   );
 }
 

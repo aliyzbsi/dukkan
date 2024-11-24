@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Search, ShoppingCart, Heart, User } from "lucide-react";
 import {
   NavigationMenu,
