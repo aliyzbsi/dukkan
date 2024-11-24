@@ -1,5 +1,11 @@
+import HeroSection from "@/components/custom/HeroSection";
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 }
 
 export default HomePage;

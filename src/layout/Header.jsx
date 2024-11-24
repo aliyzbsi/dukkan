@@ -37,7 +37,7 @@ export default function Header() {
           </div>
           <div className="flex gap-6 ">
             <Button variant="ghost" size="icon" aria-label="User account">
-              <User size={20} />
+              <User size={20} color="#3b6af5" />
             </Button>
             <Button
               variant="ghost"
@@ -45,10 +45,10 @@ export default function Header() {
               className="relative"
               onClick={() => setIsSearchOpen(!isSearchOpen)}
             >
-              <Search className="h-5 w-5 " />
+              <Search className="h-5 w-5 " color="#3b6af5" />
             </Button>
             <Button variant="ghost" size="icon" aria-label="Shopping basket">
-              <SlBasket size={20} />
+              <SlBasket size={20} color="#3b6af5" />
             </Button>
             <Button
               variant="ghost"
@@ -56,7 +56,7 @@ export default function Header() {
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
-              <GiHamburgerMenu color="gray" size={20} />
+              <GiHamburgerMenu color="#3b6af5" size={20} />
             </Button>
           </div>
         </div>
@@ -70,26 +70,26 @@ export default function Header() {
       {menuOpen && windowWidth <= 720 && (
         <nav className="top-full left-0 w-full bg-white shadow-lg z-10">
           <div className="flex flex-col items-center gap-8 py-6">
-            <Link to="home" className="mobile-menu">
+            <Link to="/" className="mobile-menu">
               Home
             </Link>
 
-            <Link to="product" className="mobile-menu">
+            <Link to="/product" className="mobile-menu">
               Product
             </Link>
 
-            <Link to="pricing" className="mobile-menu">
+            <Link to="/pricing" className="mobile-menu">
               Pricing
             </Link>
 
-            <Link to="contact" className="mobile-menu">
+            <Link to="/contact" className="mobile-menu">
               Contact
             </Link>
           </div>
         </nav>
       )}
       {isSearchOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white border-b p-4">
+        <div className="absolute top-16 left-0 w-full bg-white border-b p-4 z-50">
           <div className="container mx-auto">
             <input
               type="search"
