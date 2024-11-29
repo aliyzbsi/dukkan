@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <header className="relative">
+    <header className=" sticky top-0 z-50 bg-white">
       {windowWidth <= 720 ? (
         <div className="flex justify-between  p-8">
           <div>
