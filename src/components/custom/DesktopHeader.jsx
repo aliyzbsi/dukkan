@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 
 export default function DesktopHeader({ isSearchOpen, setIsSearchOpen }) {
   return (
-    <header className="">
-      <div className=" mx-auto px-8 py-10 h-16 flex items-center justify-around ">
+    <header className=" sticky top-0 z-50 bg-white">
+      <div className=" mx-auto px-8 py-8 h-10 flex items-center justify-around ">
         <Link to="/" className="text-2xl font-semibold">
           Dükkan
         </Link>
