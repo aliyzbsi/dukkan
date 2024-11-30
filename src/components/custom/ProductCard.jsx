@@ -23,12 +23,12 @@ function ProductCard({ displayRange }) {
           key={product.id}
           className="flex flex-col items-center justify-between gap-2 bg-white rounded-lg shadow-md shadow-gray-400 p-4 transition-transform hover:scale-90"
         >
-          <div className="relative aspect-square h-60 lg:h-36  mb-2">
+          <div className="relative aspect-square h-60 lg:h-36 border-2 rounded-xl  mb-2">
             {product.images && product.images[0] && (
               <img
                 src={product.images[0].url}
                 alt={product.name}
-                className="object-contain w-full h-full border-2 rounded-xl p-2"
+                className="object-cover w-full h-full  rounded-xl p-1"
               />
             )}
           </div>
