@@ -21,7 +21,7 @@ function ProductCard({ displayRange }) {
       {products.slice(displayRange.start, displayRange.end).map((product) => (
         <div
           key={product.id}
-          className="flex flex-col items-center justify-between gap-2 bg-white rounded-lg shadow-md shadow-black p-4 transition-transform hover:scale-90"
+          className="flex flex-col items-center justify-between gap-2 bg-white rounded-lg shadow-md shadow-gray-400 p-4 transition-transform hover:scale-90"
         >
           <div className="relative aspect-square h-60 lg:h-36  mb-2">
             {product.images && product.images[0] && (
